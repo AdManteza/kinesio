@@ -15,6 +15,8 @@ ActiveRecord::Schema.define(version: 20161025040049) do
   create_table "patients", force: :cascade do |t|
     t.string   "firstname"
     t.string   "lastname"
+    t.string   "contact_num"
+    t.string   "facebook_account"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"

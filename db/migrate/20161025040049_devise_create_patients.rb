@@ -3,6 +3,8 @@ class DeviseCreatePatients < ActiveRecord::Migration[5.0]
     create_table :patients do |t|
       t.string  :firstname
       t.string  :lastname
+      t.string  :contact_num
+      t.string  :facebook_account
 
       ## Database authenticatable
       t.string :email,              null: false, default: ""

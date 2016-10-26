@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A scheduling app for my brother's clinic. 
 
-Things you may want to cover:
+It will utilize Ruby on Rails on the backend and later on 
+use React on some parts of the front-end. 
 
-* Ruby version
+This app is still in the early development stages.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Don'y hold your breath for the production stage :)

@@ -53,3 +53,6 @@ gem 'bootstrap-sass'
 
 # Use Devise gem for authentication
 gem 'devise'
+
+gem 'jquery-turbolinks'
+ 

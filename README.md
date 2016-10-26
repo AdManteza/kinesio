@@ -7,4 +7,4 @@ use React on some parts of the front-end.
 
 This app is still in the early development stages.
 
-Don'y hold your breath for the production stage :)
+Don't hold your breath for the production stage :)

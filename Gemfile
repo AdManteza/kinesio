@@ -55,4 +55,8 @@ gem 'bootstrap-sass'
 gem 'devise'
 
 gem 'jquery-turbolinks'
+
+# DelayedJob gem for sending email
+gem 'delayed_job_active_record'
+
  

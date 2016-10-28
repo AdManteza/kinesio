@@ -4,8 +4,23 @@
   <%= devise_error_messages! %>
 
   <div class="form-group">
-    <%= f.label :name %>
-    <%= f.text_field :name, class: 'form-control' %>
+    <%= f.label :firstname %>
+    <%= f.text_field :firstname, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :lastname %>
+    <%= f.text_field :lastname, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :contact_num %>
+    <%= f.text_field :contact_num, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :facebook_account %>
+    <%= f.text_field :facebook_account, class: 'form-control' %>
   </div>
 
   <div class="form-group">
@@ -43,4 +58,3 @@
                 data: { confirm: "Are you sure?" }, method: :delete %>
 </p>
 
-<%= link_to "Back", :back, class: 'btn btn-default btn-sm' %>

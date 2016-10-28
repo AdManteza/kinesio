@@ -10,8 +10,8 @@ module DeviseHelper
     html = <<-HTML
     <div class="alert alert-error alert-block">
       <button type="button" class="close" data-dismiss="alert">x</button>
-      <strong>#{sentence}</strong>
-      <ul>
+      <h4 class="bg-danger">#{sentence}</h4>
+      <ul style="font-size: 20px;">
         #{messages}
       </ul>
     </div>

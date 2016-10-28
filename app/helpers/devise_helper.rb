@@ -3,17 +3,10 @@ module DeviseHelper
     return '' if resource.errors.empty?
 
     messages = resource.errors.full_messages.map { |msg| content_tag(:li, msg) }.join
-    sentence = I18n.t('errors.messages.not_saved',
-      count: resource.errors.count,
-      resource: resource.class.model_name.human.downcase)
-
     html = <<-HTML
-    <div class="alert alert-error alert-block">
-      <button type="button" class="close" data-dismiss="alert">x</button>
-      <h4 class="bg-danger">#{sentence}</h4>
-      <ul style="font-size: 20px;">
-        #{messages}
-      </ul>
+    <div class="alert alert-error alert-danger"> <button type="button"
+    class="close" data-dismiss="alert">×</button>
+      <h4>#{messages}</h4>
     </div>
     HTML
 

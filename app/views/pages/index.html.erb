@@ -2,9 +2,16 @@
   <div class="jumbotron">
     <div class="container text-center">
       <h3>Top Kinesio Physical Therapy and Sports Habilitation</h3>
-      <p>Register to book an Appointment.</p>
+      <% if patient_signed_in? %>
+      <p>Hi <%= current_patient.firstname %>!</p>
       <p>
-        <%= link_to 'Register', new_patient_registration_path, class: 'btn btn-primary btn-lg' %>
+      <%= link_to 'Book an Appointment', new_appointment_path, class: 'btn btn-primary btn-lg' %>
+      <% else %>
+      <p>Register or Login to book an Appointment.</p>
+      <p>
+      <%= link_to 'Register', new_patient_registration_path, class: 'btn btn-primary btn-lg' %>
+      <%= link_to 'Login', new_patient_session_path, class: 'btn btn-success btn-lg' %>
+      <% end %>
       </p>
     </div>
   </div>

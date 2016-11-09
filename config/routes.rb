@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'appointments/index'
+
+  get 'appointments/show'
+
+  get 'appointments/new'
+
+  get 'appointments/edit'
+
   devise_for :patients
   root :to => 'pages#index' 
 

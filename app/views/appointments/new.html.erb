@@ -1,5 +1,9 @@
 <h1>Appointments#new</h1>
 
+<%= calendar number_of_days: 30 do |date| %>
+  <%= date %>
+<% end %>
+
 <%= form_for @appointment do |f| %>
 <div class="col-md-4 col-md-offset-4">
 

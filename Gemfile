@@ -63,7 +63,7 @@ gem 'jquery-turbolinks'
 gem 'delayed_job_active_record'
 
 # Simple calendar
-gem "simple_calendar", "~> 2.0"
+# gem "simple_calendar", "~> 2.0"
 
 
 
